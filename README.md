@@ -106,18 +106,76 @@ npm install
 
 4. Create environment files:
 
-Frontend (.env):
-```
-VITE_API_URL=http://localhost:5000/api
+
+## 🧩 `.env.example` Backend
+
+```bash
+# API Configuration
+VITE_API_URL=http://localhost:3000/api
+VITE_API_BASE_URL="http://localhost:3000"
+# Authentication
+VITE_AUTH_TOKEN_KEY=auth_token
+VITE_AUTH_USER_KEY=auth_user
+
+# Feature Flags
+VITE_ENABLE_SOCIAL_AUTH=false
+VITE_ENABLE_EMAIL_VERIFICATION=true
+
+# App Configuration
+VITE_APP_NAME=Taskaty
+VITE_APP_VERSION=1.0.0
 ```
 
-Backend (.env):
+---
+
+
+## 🧩 `.env.example` Backend
+
+```bash
+# Server
+PORT=3000
+
+# Database
+# Example local connection
+Connection_String="mongodb://localhost:27017/taskaty"
+# Example cloud connection (replace <username>, <password>, <cluster>)
+# Connection_String="mongodb+srv://<username>:<password>@<cluster>.mongodb.net/"
+
+# Frontend
+FRONTEND_URL=http://localhost:8080
+
+# JWT (JSON Web Token)
+JWT_SECRET="your_secret_key_here"
+JWT_EXPIRES_IN="7d"
+
+# Environment
+# Use "production" or "development"
+NODE_ENV="development"
+
+# Mock data usage (true/false)
+USE_MOCK=true
+
+# Links (change before production)
+VERIFICATIONLINK="http://localhost:3000/api/auth/verify-email"
+RESET_PASS_LINK="http://localhost:3000/api/auth/change-password"
+
+# App email credentials (for Nodemailer or similar)
+APP_EMAIL_ADDRESS="your_email@example.com"
+APP_EMAIL_PASSWORD="your_app_password"
+
+# Google OAuth
+GOOGLE_CLIENT_ID="your_google_client_id"
+GOOGLE_CLIENT_SECRET="your_google_client_secret"
+
+# Cloudinary configuration
+CLOUDINARY_URL="cloudinary://<api_key>:<api_secret>@<cloud_name>"
+CLOUDINARY_CLOUD_NAME="your_cloud_name"
+CLOUDINARY_API_KEY="your_api_key"
+CLOUDINARY_API_SECRET="your_api_secret"
 ```
-PORT=5000
-MONGODB_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-FRONTEND_URL=http://localhost:5173
-```
+
+---
+
 
 5. Start the development servers:
 
