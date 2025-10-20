@@ -107,7 +107,7 @@ npm install
 4. Create environment files:
 
 
-## 🧩 `.env.example` Backend
+## 🧩 `.env.example` Frontend
 
 ```bash
 # API Configuration
