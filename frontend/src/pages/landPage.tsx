@@ -106,24 +106,24 @@ const LandingPage = () => {
           </motion.div>
 
           <div className="w-full">
-            {/* <TeamMember 
+            <TeamMember 
               name="Kareem" 
               role="Team Lead"
               delay={0}
               initials="KE"
-            /> */}
+            />
             <TeamMember
               name="Ayman Elfeky"
               role="Full-Stack Developer"
               delay={0.1}
               initials="A"
             />
-            {/* <TeamMember 
+            <TeamMember 
               name="Yousef" 
               role="frontend Developer"
               delay={0.2}
               initials="Y"
-            /> */}
+            />
             {/* <TeamMember 
               name="Shahd" 
               role="UI/UX Designer"

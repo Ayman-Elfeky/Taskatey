@@ -4,7 +4,7 @@ const User = require('../models/user.model');
 
 const connectDB = async () => {
     try {
-        const conn = await mongoose.connect(process.env.Connection_String);
+        const conn = await mongoose.connect(process.env.CONNECTION_STRING);
         console.log(`MongoDB Connected: ${conn.connection.host}`);
                 // Hash the password
                 const hashedPassword = await bcrypt.hash('admin123', 10);
