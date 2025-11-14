@@ -19,7 +19,7 @@ interface BotMessage {
 const BOT_INFO = {
     _id: 'bot-1',
     name: 'Taskaty Bot',
-    avatar: '/bot-avatar.png' // You can add a bot avatar image
+    avatar: '/bot-avatar.png'
 };
 
 const INITIAL_MESSAGE: BotMessage = {
@@ -63,7 +63,6 @@ export function BotChat() {
 
         setMessages(prev => [...prev, userMessage]);
 
-        // Simulate bot response (you can replace this with actual bot logic)
         setTimeout(() => {
             const botResponse: BotMessage = {
                 _id: `bot-${Date.now()}`,

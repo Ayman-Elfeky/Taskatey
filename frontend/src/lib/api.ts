@@ -16,7 +16,6 @@ const api = axios.create({
 // Add request interceptor
 api.interceptors.request.use(
   (config) => {
-    // You can add auth headers here if needed
     return config;
   },
   (error) => {

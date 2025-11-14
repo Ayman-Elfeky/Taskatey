@@ -75,7 +75,6 @@ export function Sidebar({ className }: SidebarProps) {
   // Determine if sidebar should be shown
   const showSidebar = !isMobile || (isMobile && mobileOpen);
 
-  // Example logout function (could be inside authService or component)
   const handleLogout = async () => {
     try {
       const res = await authService.logout();
