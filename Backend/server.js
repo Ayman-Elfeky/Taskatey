@@ -12,7 +12,7 @@ const app = express();
 const cors = require('cors');
 const passport = require('./config/passport');
 
-const allowedOrigins = ['http://localhost:8080', 'https://taskatey.vercel.app/', 'http://192.168.1.6:8080'];
+const allowedOrigins = ['http://localhost:8080', 'https://taskatey.vercel.app', 'http://192.168.1.6:8080'];
 
 app.use(cors({
     origin: function (origin, callback) {
