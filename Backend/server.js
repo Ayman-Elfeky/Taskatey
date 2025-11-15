@@ -61,6 +61,11 @@ io.on('connection', socket => {
     })
 })
 
+// welcome server
+api.get('/', (req, res) => {
+    return res.status(200).json({ok: true, message: 'Welcome to Taskatey Server'})
+})
+
 // Server connection
 server.listen(process.env.PORT, () => {
     console.log(`Server is running on port ${process.env.PORT}`);
