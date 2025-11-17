@@ -62,7 +62,7 @@ io.on('connection', socket => {
 })
 
 // welcome server
-api.get('/', (req, res) => {
+app.get('/', (req, res) => {
     return res.status(200).json({ok: true, message: 'Welcome to Taskatey Server'})
 })
 
